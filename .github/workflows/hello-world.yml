@@ -11,6 +11,7 @@ jobs:
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
       # run – произвольная bash-команда
       # ls -la выведет содержимое текущего репозитория
-      - run: make say-hello
+      - run: make ruby-file
