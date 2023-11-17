@@ -12,6 +12,8 @@ jobs:
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v3
       - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
       # run – произвольная bash-команда
       # ls -la выведет содержимое текущего репозитория
       - run: make ruby-file
